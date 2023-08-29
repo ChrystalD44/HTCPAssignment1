@@ -30,5 +30,19 @@ public class HTCPA1 {
         pw.close();
 
     }
+
+    public int countCharacters(String inputFile) throws IOException
+    {
+        File inFile = new File(inputFile);
+        int charCount = 0;
+        BufferedReader br = new BufferedReader(new FileReader(inFile));
+        while (br.ready())
+        {
+            br.read();
+            charCount++;
+        }
+        br.close();
+        return charCount;
+    }
 		
 }
