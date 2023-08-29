@@ -26,7 +26,7 @@ public class HTCPA1 {
         File out = new File(outputFileName);
 		PrintWriter pw = new PrintWriter(out);
 
-        pw.print("Hello!");
+        pw.print("Hello! If you saw this line, that means your code is working.");
         pw.close();
 
     }
